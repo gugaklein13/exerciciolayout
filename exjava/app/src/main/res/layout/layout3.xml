@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/borda_edit"
+            android:drawableEnd="@drawable/ic_baseline_person_pin"
+            android:hint="@string/user_name"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/borda_edit"
+            android:drawableEnd="@drawable/ic_baseline_vpn_key"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/borda_edit"
+            android:drawableEnd="@drawable/ic_baseline_email"
+            android:hint="@string/e_mail"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/borda_edit"
+            android:drawableEnd="@drawable/ic_baseline_smartphone"
+            android:hint="@string/phone"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:padding="15dp"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="140dp"
+            android:background="@drawable/botao_redondo"
+            android:text="@string/sing_up"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
