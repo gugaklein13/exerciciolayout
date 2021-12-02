@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFC8C8"
+    android:orientation="vertical"
+    tools:context=".Livro_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolBarPer"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:background="@drawable/paul"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txtIdTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Paul"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtIdCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:text="32 anos" />
+
+        <TextView
+            android:id="@+id/txtIdDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Capoeira"
+            android:textAlignment="inherit"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rtbLivros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="2" />
+
+            <TextView
+                android:id="@+id/txtNumValRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="5"
+                android:textAlignment="inherit"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

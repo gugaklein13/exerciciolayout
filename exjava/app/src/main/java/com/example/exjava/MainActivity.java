@@ -2,6 +2,7 @@ package com.example.exjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,9 +32,32 @@ public class MainActivity extends AppCompatActivity {
         btnSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),
-                        "Digite o Usuarío e senha para entrar!",
-                        Toast.LENGTH_SHORT).show();
+                String username, password;
+                username = edtUsername.getText().toString();
+                password = edtPassword.getText().toString();
+
+                if (username.equals("gustavo") && password.equals(123)) {
+                    Toast.makeText(getApplicationContext(),"Bem vindo ao sistema!",Toast.LENGTH_SHORT).show();
+
+                    //abrir janela
+
+                    startActivity(new Intent(getApplicationContext(),Menu_Activity.class));
+                    finish();
+
+                    Intent intent = new Intent(getApplicationContext(),Menu_Activity.class);
+                    startActivity(intent);
+
+
+                } else {
+                    Toast.makeText(getApplicationContext(),"Usuário ou senha inválido!",Toast.LENGTH_SHORT).show();
+                    edtUsername.setText("");
+                    edtPassword.setText("");
+                    edtUsername.requestFocus();
+
+                }
+
+
+                //Toast.makeText(getApplicationContext(),"Bem vindo ao sistema!",Toast.LENGTH_SHORT).show();
             }
         });
     }

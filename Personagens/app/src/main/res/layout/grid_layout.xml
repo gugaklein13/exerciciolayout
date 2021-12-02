@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:rowCount="5"
+        android:columnCount="2"
+        >
+
+        <ImageView
+            android:id="@+id/grid_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/kaa"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/eddy"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/heihachi"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/Hwoarang"
+            android:scaleType="centerCrop"></ImageView>
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/jin"
+            android:scaleType="centerCrop"></ImageView>
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/king"
+            android:scaleType="centerCrop"></ImageView>
+
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/law"
+            android:scaleType="centerCrop" />
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/lei"
+            android:scaleType="centerCrop"></ImageView>
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/paul"
+            android:scaleType="centerCrop"></ImageView>
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/toshimitzu"
+            android:scaleType="centerCrop"></ImageView>
+
+
+
+    </GridLayout>
+</LinearLayout>
